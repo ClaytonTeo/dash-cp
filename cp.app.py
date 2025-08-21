@@ -238,13 +238,6 @@ def style_table(df):
 st.subheader("Controle de Pacing - Campanhas")
 st.write(style_table(df))
 
-
-# --- Exibir tabela principal ---
-st.subheader("Controle de Pacing - Campanhas")
-st.write(style_table(df))
-
-
-
 # --- Sidebar: pesquisa por campanha ---
 st.sidebar.header("Pesquisa por Nome de Campanha")
 termo_pesquisa = st.sidebar.text_input("Digite o nome ou parte do nome da campanha:")
@@ -271,5 +264,6 @@ if termo_pesquisa:
         st.warning("Nenhuma campanha encontrada.")
 else:
     st.info("Digite um termo no campo de pesquisa para filtrar a campanha.")
+
 
 
